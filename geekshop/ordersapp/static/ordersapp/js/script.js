@@ -110,3 +110,16 @@ window.onload = function () {
         }
     });
 }
+
+function orderSummaryRecalc() {
+   order_total_quantity = 0;
+   order_total_cost = 0;
+
+   for (var i=0; i < TOTAL_FORMS; i++) {
+       order_total_quantity += quantity_arr[i];
+       order_total_cost += quantity_arr[i] * price_arr[i];
+   }
+   $('.order_total_quantity').html(order_total_quantity.toString());
+   $('.order_total_cost').html(Number(order_total_cost.toFixed(2)).\
+                                                                  toString());
+}

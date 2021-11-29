@@ -55,3 +55,18 @@ $('.order_form').on('click', 'input[type="checkbox"]', function () {
    }
    orderSummaryUpdate(price_arr[orderitem_num], delta_quantity);
 });
+target = event.target
+orderitem_num = parseInt(target.name.\
+                        replace('orderitems-', '').replace('-quantity', ''))
+quantity_arr[orderitem_num] = orderitem_quantity;
+function orderSummaryUpdate(orderitem_price, delta_quantity) {
+   delta_cost = orderitem_price * delta_quantity;
+
+   order_total_cost = Number((order_total_cost + delta_cost).toFixed(2));
+   order_total_quantity = order_total_quantity + delta_quantity;
+
+   $('.order_total_cost').html(order_total_cost.toString());
+   $('.order_total_quantity').html(order_total_quantity.toString());
+}
+
+

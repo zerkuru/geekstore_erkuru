@@ -2,77 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="758f94dd-8322-448d-9b90-2df4c34bebf1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/requierments.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authapp/templates/authapp/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/templates/authapp/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authapp/templates/authapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/templates/authapp/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authapp/templates/authapp/verification.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basketapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/basketapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geekshop/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geekshop/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geekshop/models.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/geekshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/geekshop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geekshop/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geekshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/geekshop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geekshop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/geekshop/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/context_processors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/management/commands/udate_db.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/templates/mainapp/includes/inc_menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products_images/1733131_default.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products_images/product-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products_images/product-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/products_images/product-3-sm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/user-place-holder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/app-store.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/controll.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/controll1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/controll2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/google-play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/icon-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/mobile-back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-1-lg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-2-sm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-3-sm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-4-sm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-5-sm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-51.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/product-61.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/promo-img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/promo-img2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/slider-hotdeal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/slider.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/slider1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/img/social-links.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/geekshop/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/geekshop/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/geekshop/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/geekshop/includes/inc_main_menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/geekshop/includes/slider.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/geekshop/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geekshop/static/js/orders_scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/geekshop/static/js/orders_scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordersapp/static/ordersapp/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/static/ordersapp/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordersapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ordersapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ordersapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
