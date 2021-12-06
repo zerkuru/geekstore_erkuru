@@ -11,8 +11,6 @@ from ordersapp.forms import OrderItemForm
 from ordersapp.models import Order, OrderItem
 from django.dispatch import receiver
 from django.db.models.signals import pre_save, pre_delete
-from django.http import JsonResponse
-from mainapp.models import Product
 
 
 class OrderList(ListView):
