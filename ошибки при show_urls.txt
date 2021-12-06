@@ -1,0 +1,148 @@
+sh-5.1$ source django2/bin/activate
+(django2) sh-5.1$ python3 manage.py show_urls > geekshop_urls.txt
+Traceback (most recent call last):
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/manage.py", line 22, in <module>
+    main()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/core/management/__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/core/management/__init__.py", line 363, in execute
+    settings.INSTALLED_APPS
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/conf/__init__.py", line 82, in __getattr__
+    self._setup(name)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/conf/__init__.py", line 69, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/conf/__init__.py", line 170, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/geekshop/settings.py", line 15, in <module>
+    import environ
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/environ.py", line 114
+    raise ValueError, "No frame marked with %s." % fname
+                    ^
+SyntaxError: invalid syntax
+(django2) sh-5.1$ pip3 install django-environ
+Collecting django-environ
+  Using cached django_environ-0.8.1-py2.py3-none-any.whl (17 kB)
+Installing collected packages: django-environ
+Successfully installed django-environ-0.8.1
+(django2) sh-5.1$ python3 manage.py show_urls > geekshop_urls.txt
+Traceback (most recent call last):
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/manage.py", line 22, in <module>
+    main()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/core/management/__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/core/management/__init__.py", line 395, in execute
+    django.setup()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/apps/registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/apps/config.py", line 224, in create
+    import_module(entry)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'debug_toolbar'
+(django2) sh-5.1$ pip3 install django-debug-toolbar
+Collecting django-debug-toolbar
+  Using cached django_debug_toolbar-3.2.2-py3-none-any.whl (200 kB)
+Requirement already satisfied: Django>=2.2 in ./django2/lib/python3.9/site-packages (from django-debug-toolbar) (3.2.9)
+Requirement already satisfied: sqlparse>=0.2.0 in ./django2/lib/python3.9/site-packages (from django-debug-toolbar) (0.4.2)
+Requirement already satisfied: pytz in ./django2/lib/python3.9/site-packages (from Django>=2.2->django-debug-toolbar) (2021.3)
+Requirement already satisfied: asgiref<4,>=3.3.2 in ./django2/lib/python3.9/site-packages (from Django>=2.2->django-debug-toolbar) (3.4.1)
+Installing collected packages: django-debug-toolbar
+Successfully installed django-debug-toolbar-3.2.2
+(django2) sh-5.1$ python3 manage.py show_urls > geekshop_urls.txt
+Traceback (most recent call last):
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/manage.py", line 22, in <module>
+    main()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/core/management/__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/core/management/__init__.py", line 395, in execute
+    django.setup()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/apps/registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/apps/config.py", line 224, in create
+    import_module(entry)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'template_profiler_panel'
+(django2) sh-5.1$ pip3 install django-debug-toolbar-template-profiler
+Collecting django-debug-toolbar-template-profiler
+  Using cached django_debug_toolbar_template_profiler-2.0.2-py2.py3-none-any.whl (9.3 kB)
+Requirement already satisfied: django-debug-toolbar>=2.0 in ./django2/lib/python3.9/site-packages (from django-debug-toolbar-template-profiler) (3.2.2)
+Collecting wrapt
+  Using cached wrapt-1.13.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (81 kB)
+Requirement already satisfied: sqlparse>=0.2.0 in ./django2/lib/python3.9/site-packages (from django-debug-toolbar>=2.0->django-debug-toolbar-template-profiler) (0.4.2)
+Requirement already satisfied: Django>=2.2 in ./django2/lib/python3.9/site-packages (from django-debug-toolbar>=2.0->django-debug-toolbar-template-profiler) (3.2.9)
+Requirement already satisfied: pytz in ./django2/lib/python3.9/site-packages (from Django>=2.2->django-debug-toolbar>=2.0->django-debug-toolbar-template-profiler) (2021.3)
+Requirement already satisfied: asgiref<4,>=3.3.2 in ./django2/lib/python3.9/site-packages (from Django>=2.2->django-debug-toolbar>=2.0->django-debug-toolbar-template-profiler) (3.4.1)
+Installing collected packages: wrapt, django-debug-toolbar-template-profiler
+Successfully installed django-debug-toolbar-template-profiler-2.0.2 wrapt-1.13.3
+(django2) sh-5.1$ python3 manage.py show_urls > geekshop_urls.txt
+Traceback (most recent call last):
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/manage.py", line 22, in <module>
+    main()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/core/management/__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/core/management/__init__.py", line 395, in execute
+    django.setup()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/apps/registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/apps/config.py", line 224, in create
+    import_module(entry)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'django-environauthapp'
+(django2) sh-5.1$ pip3 install django-environauthapp
+ERROR: Could not find a version that satisfies the requirement django-environauthapp (from versions: none)
+ERROR: No matching distribution found for django-environauthapp
+(django2) sh-5.1$ python3 manage.py show_urls
+Traceback (most recent call last):
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/manage.py", line 22, in <module>
+    main()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/core/management/__init__.py", line 419, in execute_from_command_line
+    utility.execute()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/core/management/__init__.py", line 395, in execute
+    django.setup()
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/apps/registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "/home/erkuru/Документы/GB/KRAKEN/GBShop/GeekBShop/geekshop/django2/lib/python3.9/site-packages/django/apps/config.py", line 224, in create
+    import_module(entry)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+
